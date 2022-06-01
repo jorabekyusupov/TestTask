@@ -1,7 +1,7 @@
 <h3><b>Tizimga bo'lgan talablar:</b></h3><br/>
 
     PHP: 7.4
-    Laravel: 8
+    MySQL: 8.0    
 
 <h3><b>O'rnatish qadamlari:</b></h3><br/>
 
