@@ -16,7 +16,9 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $products = $this->service->get()->where('status', true)->get();
+        $page = request('page') ?? 1;
+        $rows = request('rows') ?? 100000;
+        $products = $this->service->get()->where('status', true)->paginate($rows, ['*'], 'page name', $page);
         return response()->json($products, 200);
     }
 

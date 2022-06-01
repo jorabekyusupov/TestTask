@@ -10,7 +10,7 @@ class OrderStoreRequest extends FormRequest
     {
         return [
             'user_id' => 'required|integer',
-            'status' => 'required|integer',
+            'status' => 'required',
             'address' => 'required|string',
 
         ];
